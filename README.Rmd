@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/nebula-group/nebula/workflows/R-CMD-check/badge.svg)](https://github.com/nebula-group/nebula/actions)
 <!-- badges: end -->
 
-The Nebula package implements Network-based latent-Dirichlet subtype analysis (Nebula) algorithm. 
+The {nebula} package implements Network-based latent-Dirichlet subtype analysis (Nebula) algorithm. 
 
 Practically, this can be used to incorporate biological networks/pathways to inform clustering solutions.
 

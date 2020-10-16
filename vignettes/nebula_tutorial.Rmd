@@ -23,7 +23,7 @@ This vignette will walk a reader through the `nebula()` function.
 
 ## Setup
 
-Before going through the tutorial, install {Nebula}. 
+Before going through the tutorial, install {nebula}. 
 
 ```{r, include = FALSE}
 library(nebula)

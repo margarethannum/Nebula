@@ -104,7 +104,7 @@
 <a href="#setup" class="anchor"></a>Setup</h2>
 <p>Before going through the tutorial, install {Nebula}.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"nebula-group/nebula"</span>, build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"nebula-group/nebula"</span>, build_vignettes <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
 
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/nebula-group/nebula">nebula</a></span><span class="op">)</span></pre></div>
 </div>
@@ -166,7 +166,7 @@
 <span class="va">t2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span>
 
 <span class="va">t2</span><span class="op">-</span><span class="va">t1</span>
-<span class="co">#&gt; Time difference of 12.99246 secs</span></pre></div>
+<span class="co">#&gt; Time difference of 11.98156 secs</span></pre></div>
 <p>Now we can examine the output.</p>
 <p>There are subtype assignments for all samples:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
@@ -188,28 +188,6 @@
 <span class="co">#&gt; [5,]    0    1    0</span>
 <span class="co">#&gt; [6,]    0    0    1</span></pre></div>
 <p>Finally, you may also access feature selection information in the output. For each feature in each mode, there is a TRUE/FALSE value for whether the feature is a defining variable in each cluster (in the <code>res$defvar</code> element), as well as the probability of that feature being a defining variable for the cluster (<code>res$defvar_pr</code>)</p>
-<!-- ```{r} -->
-<!-- set.seed(1234) -->
-<!-- res2 <- nebula( -->
-<!--   data = colon$modal,  -->
-<!--   modtype = c(0, 1),  -->
-<!--   E = colon$network, -->
-<!--   H = 3,  -->
-<!--   modeta = c(1, 0.2), -->
-<!--   nu = 1, -->
-<!--   alpha = 1, -->
-<!--   lam = 1,  -->
-<!--   alpha_sigma = 10, -->
-<!--   beta_sigma = 10, -->
-<!--   alpha_p = 1,  -->
-<!--   beta_p = 1,  -->
-<!--   mu0 = 0,  -->
-<!--   sig0 = 20, -->
-<!--   pr0 = 0.5, -->
-<!--   binit = NULL -->
-<!-- ) -->
-<!-- table(res$clustering, res2$clustering) -->
-<!-- ``` -->
 </div>
   </div>
 
